@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext",
+    "target": "ES6",
+    "allowJs": true,
+    "sourceMap": true,
+    "plugins": [{ "name": "typescript-plugin-css-modules" }]
+  },
+  "files": ["src/index.tsx", "src/index.d.ts"]
+}
