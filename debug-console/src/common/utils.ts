@@ -1,11 +1,15 @@
 export const jsonToStr = (json: unknown) => JSON.stringify(json, null, 2);
 
-// 需修改为用户生成的token
+// TODO：需修改为用户生成的token，token需匹配appId和userId，否则无法登录
 export const generateToken = (appId: string, userId: string) => {
   switch (userId) {
     case 'Tony':
       return '';
     case 'Lily':
+      return '';
+    case 'Jerry':
+      return '';
+    default:
       return '';
   }
 };

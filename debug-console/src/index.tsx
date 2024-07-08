@@ -63,6 +63,7 @@ function App() {
       }
       const rtm = new RTM(appId, userId, options as RTMConfig);
       clientSettingRef.current = config;
+      console.log('rtmConfig', options);
       return {
         rtm,
         token: (options as RTMConfig).token,
@@ -104,6 +105,7 @@ function App() {
     });
   };
   useEffect(() => {
+    // TODO: 可以按需修改用户列表,改为固定用户，默认只有一个用户，且随机生成4位字符串
     const list = DEFAULT_USERS.map(user => {
       const userId = `${user}_${generateStr(4)}`;
       const client = setupRtm(userId);
