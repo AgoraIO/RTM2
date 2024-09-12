@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/demo_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="@string/app_name"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:weightSum="10">
+
+        <CheckBox
+            android:id="@+id/st_with_metadata"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="3"
+            android:text="withStorage"
+            android:textSize="13sp"/>
+
+        <CheckBox
+            android:id="@+id/st_with_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="3"
+            android:text="withLock"
+            android:textSize="13sp"/>
+
+        <CheckBox
+            android:id="@+id/st_with_presence"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="3"
+            android:text="withPresence"
+            android:textSize="13sp"/>
+
+        <CheckBox
+            android:id="@+id/st_be_quiet"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="3"
+            android:text="beQuiet"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/stream_channel_name"
+            style="@style/editableTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="channel_name" />
+
+        <TextView
+            android:id="@+id/join_channel_btn"
+            style="@style/testBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="JoinChannel"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/leave_channel_btn"
+            style="@style/testBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="LeaveChannel"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/topic_name"
+            style="@style/editableTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="topic_name" />
+
+        <TextView
+            android:id="@+id/join_topic_btn"
+            style="@style/testBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="JoinTopic"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/leave_topic_btn"
+            style="@style/testBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="LeaveTopic"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <EditText
+            android:id="@+id/subscribe_user_id"
+            style="@style/editableTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="sub_user_id" />
+
+        <TextView
+            android:id="@+id/add_user_to_list_btn"
+            style="@style/testBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="AddUser"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/clear_user_btn"
+            style="@style/testBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="ClearUser"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/get_topic_user_list_btn"
+            style="@style/testBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="GetUserList"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/subscribe_topic_btn"
+            style="@style/testBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Subscribe"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/unsubscribe_topic_btn"
+            style="@style/testBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Unsubscribe"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/topic_message"
+            style="@style/editableTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:hint="topic_message" />
+
+        <TextView
+            android:id="@+id/send_topic_message_btn"
+            style="@style/testBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:text="SendMessage"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:weightSum="10">
+
+        <CheckBox
+            android:id="@+id/msg_with_message"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="3"
+            android:text="withMsg"
+            android:textSize="13sp"/>
+
+        <CheckBox
+            android:id="@+id/msg_with_presence"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="3"
+            android:text="withPresence"
+            android:textSize="13sp"/>
+
+        <CheckBox
+            android:id="@+id/msg_be_quiet"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="3"
+            android:text="beQuiet"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:weightSum="10">
+
+        <CheckBox
+            android:id="@+id/msg_with_metadata"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="3"
+            android:text="withStorage"
+            android:textSize="13sp"/>
+
+        <CheckBox
+            android:id="@+id/msg_with_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="3"
+            android:text="withLock"
+            android:textSize="13sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/msg_channel_name"
+            style="@style/editableTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="channel_name" />
+
+        <TextView
+            android:id="@+id/subscribe_btn"
+            style="@style/testBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Subscribe"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/unsubscribe_btn"
+            style="@style/testBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Unsubscribe"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/channel_message"
+            style="@style/editableTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="message" />
+
+        <EditText
+            android:id="@+id/custom_type"
+            style="@style/editableTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="custom_type" />
+
+        <CheckBox
+            android:id="@+id/msg_store_in_history"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="2"
+            android:text="history" />
+
+        <TextView
+            android:id="@+id/publish_btn"
+            style="@style/testBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="Publish"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/msg_history_start"
+            style="@style/editableTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="start" />
+
+        <EditText
+            android:id="@+id/msg_history_end"
+            style="@style/editableTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="end" />
+
+        <EditText
+            android:id="@+id/msg_history_count"
+            style="@style/editableTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="count" />
+
+        <TextView
+            android:id="@+id/getChannelMessages"
+            style="@style/testBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="GetMessages"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/gray" />
+
+    <include
+        android:id = "@+id/channel_log"
+        layout="@layout/log_layout" />
+
+</LinearLayout>

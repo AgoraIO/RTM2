@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/demo_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="@string/app_name"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/gray" />
+
+    <include
+        android:id="@+id/storage_channel"
+        layout="@layout/channel_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/sub_storage_user_id"
+            style="@style/editableTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="userid" />
+
+        <TextView
+            android:id="@+id/sub_user_metadata_btn"
+            style="@style/testBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Subscribe"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/unsub_user_metadata_btn"
+            style="@style/testBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Unsubscribe"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/item_key"
+            style="@style/editableTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="key" />
+
+        <EditText
+            android:id="@+id/item_value"
+            style="@style/editableTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="value" />
+
+        <EditText
+            android:id="@+id/item_revision"
+            style="@style/editableTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="revision" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/add_item_btn"
+            style="@style/testBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="AddItem"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/clear_items_btn"
+            style="@style/testBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="ClearItems"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/get_items_btn"
+            style="@style/testBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="GetItems"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:weightSum="10">
+
+        <RadioGroup
+            android:id="@+id/storage_type_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/channel_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:checked="true"
+                android:text="channel" />
+
+            <RadioButton
+                android:id="@+id/user_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="user" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/major_revision"
+            style="@style/editableTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="major_rev" />
+
+        <CheckBox
+            android:id="@+id/record_ts"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="3"
+            android:text="recordTs"/>
+
+        <CheckBox
+            android:id="@+id/record_userId"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="3"
+            android:text="recordUserId"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/set_metadata_btn"
+            style="@style/testBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Set"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/update_metadata_btn"
+            style="@style/testBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Update"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/remove_metadata_btn"
+            style="@style/testBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Remove"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/get_metadata_btn"
+            style="@style/testBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Get"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/gray" />
+
+    <include
+        android:id="@+id/storage_log"
+        layout="@layout/log_layout" />
+</LinearLayout>
