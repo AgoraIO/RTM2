@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rtm_message_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/demo_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/blue"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="@string/app_name"/>
+
+    <TextView
+        android:id="@+id/private_btn"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="Private" />
+
+    <TextView
+        android:id="@+id/channel_btn"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="Channel" />
+
+    <TextView
+        android:id="@+id/storage_btn"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="Storage" />
+
+    <TextView
+        android:id="@+id/lock_btn"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="Lock" />
+
+    <TextView
+        android:id="@+id/presence_btn"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="Presence" />
+
+</LinearLayout>

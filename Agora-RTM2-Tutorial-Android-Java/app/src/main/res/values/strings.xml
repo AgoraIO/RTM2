@@ -1,0 +1,7 @@
+<resources tools:igore="ExtraTranslation" xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">AgoraRtmDemo</string>
+    <string name="str_login">Login</string>
+    <string name="str_userid">UserId</string>
+    <string name="str_appid">AppId</string>
+    <string name="str_token">Token</string>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme">
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="testBtnStyle">
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:background">@color/gray</item>
+        <item name="android:gravity">center_horizontal</item>
+
+    </style>
+    <style name="editableTextStyle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:ems">6</item>
+
+    </style>
+</resources>
