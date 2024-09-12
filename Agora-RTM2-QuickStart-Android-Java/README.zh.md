@@ -1,4 +1,4 @@
-# Agora RTM2  Android Java Demo
+# Agora RTM2 Quick Start Android Demo
 
 *Read this in other languages: [English](README.md)*
 
@@ -7,13 +7,9 @@
 在这个示例项目中包含了以下功能：
 
 - 登录 RTM 服务器
-- 发送和接收点对点消息
 - 加入频道
 - 发送和接收频道消息
-- 设置和更新属性
-- 获取和使用锁
-- 设置和更新临时状态
-- 等等
+- 登出 RTM 服务器
 
 ## 运行示例程序
 
