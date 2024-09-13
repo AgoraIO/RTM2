@@ -2,6 +2,9 @@
 
 A new Flutter project.
 
+## Get App ID
+you will need the App ID authenticate your app. Get your AppId from the [console](https://console.shengwang.cn/).
+
 ## Getting Started
 1. clone this repo
 2. open this project use your IDE, tpye following cammands in terminal to install dependencies:
@@ -17,4 +20,5 @@ A new Flutter project.
    ```
    flutter run
    ```
-   
+## Documentation
+[Docs for RTM flutter SDK](https://doc.shengwang.cn/doc/rtm2/flutter/landing-page)
