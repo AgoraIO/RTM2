@@ -1,0 +1,39 @@
+PODS:
+  - agora_rtm (2.2.1):
+    - AgoraIrisRTM_iOS (= 2.2.1-build.1)
+    - AgoraRtm (= 2.2.1)
+    - Flutter
+  - AgoraIrisRTM_iOS (2.2.1-build.1)
+  - AgoraRtm (2.2.1)
+  - Flutter (1.0.0)
+  - iris_method_channel (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - agora_rtm (from `.symlinks/plugins/agora_rtm/ios`)
+  - Flutter (from `Flutter`)
+  - iris_method_channel (from `.symlinks/plugins/iris_method_channel/ios`)
+
+SPEC REPOS:
+  trunk:
+    - AgoraIrisRTM_iOS
+    - AgoraRtm
+
+EXTERNAL SOURCES:
+  agora_rtm:
+    :path: ".symlinks/plugins/agora_rtm/ios"
+  Flutter:
+    :path: Flutter
+  iris_method_channel:
+    :path: ".symlinks/plugins/iris_method_channel/ios"
+
+SPEC CHECKSUMS:
+  agora_rtm: d72a05421469883ec0705989fc536d5680d829e1
+  AgoraIrisRTM_iOS: a7d484dbd8632db3c520fa46b5e1ce054329dbb3
+  AgoraRtm: 0c0ea266de02ad6e4e43b1d33b7bb093bc347555
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  iris_method_channel: 0617c689164d8154c020c50f63ca79f92b8a7b9d
+
+PODFILE CHECKSUM: 70d9d25280d0dd177a5f637cdb0f0b0b12c6a189
+
+COCOAPODS: 1.11.2
