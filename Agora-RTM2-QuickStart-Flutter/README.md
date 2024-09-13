@@ -1,16 +1,20 @@
-# first_step
+# RTM2 quick start demo resource
 
 A new Flutter project.
 
 ## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. clone this repo
+2. open this project use your IDE, tpye following cammands in terminal to install dependencies:
+   ```
+   flutter pub get
+   ```
+3. edit `main.dart`, replace `userId` and `appId` with your `userId` and `appId`.
+   ```
+   const userId = 'your_userId';
+   const appId = 'your_appId';
+   ```
+4. type the following cammands in terminal to run app:
+   ```
+   flutter run
+   ```
+   
