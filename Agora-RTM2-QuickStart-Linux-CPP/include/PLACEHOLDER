@@ -1,0 +1,7 @@
+AgoraRtmBase.h
+IAgoraRtmClient.h
+IAgoraRtmLock.h
+IAgoraRtmPresence.h
+IAgoraRtmStorage.h
+IAgoraStreamChannel.h
+
