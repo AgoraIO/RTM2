@@ -1,4 +1,4 @@
-# Agora RTM2  Android Kotlin Demo
+# Agora RTM2 Android Kotlin Demo
 
 *Read this in other languages: [English](README.md)*
 

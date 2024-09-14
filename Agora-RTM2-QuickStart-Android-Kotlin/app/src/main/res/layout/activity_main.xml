@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/appid"
+            style="@style/editableTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:hint="APPID" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/token"
+            style="@style/editableTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:hint="Token" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/uid"
+            style="@style/editableTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:hint="user id" />
+
+        <TextView
+            android:id="@+id/login_button"
+            style="@style/testBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textSize="16sp"
+            android:text="Login" />
+
+        <TextView
+            android:id="@+id/logout_button"
+            style="@style/testBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textSize="16sp"
+            android:text="Logout" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/channel_name"
+            style="@style/editableTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textSize="14sp"
+            android:hint="channel name" />
+
+        <TextView
+            android:id="@+id/join_button"
+            style="@style/testBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textSize="16sp"
+            android:text="Join" />
+
+        <TextView
+            android:id="@+id/leave_button"
+            style="@style/testBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textSize="16sp"
+            android:text="Leave" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/message"
+            style="@style/editableTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:hint="message" />
+
+        <TextView
+            android:id="@+id/send_channel_msg_button"
+            style="@style/testBtnStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="SEND MSG" />
+
+    </LinearLayout>
+
+    <include
+        android:id = "@+id/demo_log"
+        layout="@layout/log_layout" />
+
+</LinearLayout>

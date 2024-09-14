@@ -1,19 +1,15 @@
-# Agora RTM2 Android Kotlin Demo
+# Agora RTM2 Quick Start Android Demo
 
 *其他语言版本： [简体中文](README.zh.md)*
 
-The Agora RTM2 Android Tutorial is an open-source demo that will help you get message chat integrated directly into your Android applications using the Agora RTM SDK.
+The Agora RTM2 Quick Start  Demo is an open-source demo that will help you get message chat integrated directly into your Android applications using the Agora RTM SDK.
 
 With this sample app, you can:
 
 - Login RTM server
-- Send and receive point to point message online
 - Join channel
 - Send and receive channel message
-- Set and update metadata
-- Acquire and use lock
-- Set and update state
-- And so on
+- Logout RTM server
 
 ## Developer Environment Requirements
 
@@ -83,13 +79,6 @@ Or use `Gradle` to build and run.
 ### 4. build and run
 Finally, open project with Android Studio, connect your Android device, build and run.
 
-
-## Developer Environment Requirements
-
-- Android Studio 2.0 or above
-- Java 8
-- Real devices (Nexus 5X or other devices)
-- Some simulators are function missing or have performance issue, so real device is the best choice
 
 ## Connect Us
 

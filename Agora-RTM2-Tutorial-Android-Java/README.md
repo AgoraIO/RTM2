@@ -1,4 +1,4 @@
-# Agora RTM2  Android Java Demo
+# Agora RTM2 Android Java Demo
 
 *其他语言版本： [简体中文](README.zh.md)*
 

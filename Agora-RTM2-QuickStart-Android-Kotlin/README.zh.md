@@ -1,4 +1,4 @@
-# Agora RTM2 Android Java Demo
+# Agora RTM2 Quick Start Android Demo
 
 *Read this in other languages: [English](README.md)*
 
@@ -7,13 +7,9 @@
 在这个示例项目中包含了以下功能：
 
 - 登录 RTM 服务器
-- 发送和接收点对点消息
 - 加入频道
 - 发送和接收频道消息
-- 设置和更新属性
-- 获取和使用锁
-- 设置和更新临时状态
-- 等等
+- 登出 RTM 服务器
 
 ## 运行环境
 
@@ -53,6 +49,7 @@ git clone git@github.com:AgoraIO/RTM2.git
   compile fileTree(dir: 'libs', include: ['*.jar'])
   ```
 
+
 使用 Gradle 集成 SDK：
 
 * 在 `/Gradle Scripts/build.gradle(Project: <projectname>)` 文件中添加如下代码，添加 Maven Central 依赖：
@@ -84,6 +81,7 @@ git clone git@github.com:AgoraIO/RTM2.git
       implementation 'io.agora:agora-rtm:x.y.z'
   }
   ```
+
 
 ### 第4步: 编译运行程序
 

@@ -234,6 +234,7 @@ public class MainActivity extends Activity {
     void onClearLogBtnClicked() {
         mLogTextView.setText("");
     }
+
     // 将消息记录写入 TextView
     public void printLog(String record) {
         SpannableStringBuilder spannableString = new SpannableStringBuilder("[INFO] " + record + "\n");
