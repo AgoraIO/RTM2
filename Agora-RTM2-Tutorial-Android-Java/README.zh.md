@@ -15,9 +15,24 @@
 - 设置和更新临时状态
 - 等等
 
+## 运行环境
+
+- Android Studio
+- Java 8
+- 真实 Android 设备 
+- 部分模拟器会存在功能缺失或者性能问题，所以推荐使用真机
+
 ## 运行示例程序
 
-首先在 [Agora.io 注册](https://dashboard.agora.io/cn/signup/) 注册账号，并创建自己的测试项目，获取到 AppID。
+### 第1步: 克隆项目工程
+
+```
+git clone git@github.com:AgoraIO/RTM2.git
+```
+
+### 第2步: 创建项目 AppID
+
+在 [Agora.io 注册](https://dashboard.agora.io/cn/signup/) 注册账号，并创建自己的测试项目，获取到 AppID。
 
 将 AppID 填写进 "app/src/main/res/values/strings_config.xml"
 
@@ -26,18 +41,19 @@
 
 ```
 
-## 集成方式
+### 第3步: 集成 SDK
 
-- 第1步: 在 Agora.io SDK 下载 RTM SDK，解压后将其中的 libs 文件夹下的 *.jar 复制到本项目的 app/libs 下，其中的 libs 文件夹下的 arm64-v8a/x86/armeabi-v7a 复制到本项目的 app/src/main/jniLibs 下。
+通过 CDN 方式集成 SDK 或者 使用 Gradle 集成 SDK
 
-- 第2步: 在本项目的 "app/build.gradle" 文件依赖属性中添加如下依赖关系（此处代码中已添加示例）：
+使用 CDN 方式集成：
+* 在 Agora.io SDK 下载 RTM SDK，解压后将其中的 libs 文件夹下的 *.jar 复制到本项目的 app/libs 下，其中的 libs 文件夹下的 arm64-v8a/x86/armeabi-v7a 复制到本项目的 app/src/main/jniLibs 下。
+
+* 在本项目的 "app/build.gradle" 文件依赖属性中添加如下依赖关系（此处代码中已添加示例）：
 
   compile fileTree(dir: 'libs', include: ['*.jar'])
 
 
-最后用 Android Studio 打开该项目，连上设备，编译并运行。
-
-也可以使用 `Gradle` 直接编译运行
+使用 Gradle 集成 SDK：
 
 * 在 `/Gradle Scripts/build.gradle(Project: <projectname>)` 文件中添加如下代码，添加 Maven Central 依赖：
 
@@ -69,14 +85,10 @@
   }
   ```
 
-  
+### 第4步: 编译运行程序
 
-## 运行环境
+最后用 Android Studio 打开该项目，连上设备，编译并运行
 
-- Android Studio 2.0 +
-- Java 8
-- 真实 Android 设备 (Nexus 5X 或者其它设备)
-- 部分模拟器会存在功能缺失或者性能问题，所以推荐使用真机
 
 ## 联系我们
 

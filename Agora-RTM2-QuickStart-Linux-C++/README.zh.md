@@ -11,9 +11,23 @@
 - 发送和接收频道消息
 - 登出 RTM 服务器
 
+## 运行环境
+
+- ubuntu 18.04 or Debian 9.9
+- x86-64
+- C++ 11 and above
+
 ## 运行示例程序
 
-首先在 [Agora.io 注册](https://dashboard.agora.io/cn/signup/) 注册账号，并创建自己的测试项目，获取到 AppID。
+### 第1步: 克隆项目工程
+
+```
+git clone git@github.com:AgoraIO/RTM2.git
+```
+
+### 第2步: 创建项目 AppID
+
+在 [Agora.io 注册](https://dashboard.agora.io/cn/signup/) 注册账号，并创建自己的测试项目，获取到 AppID。
 
 将 AppID 填写进 "rtm_quick_start.cpp"
 
@@ -22,19 +36,16 @@ const std::string APP_ID = "Your APP ID";
 
 ```
 
-## 集成方式
+### 第3步: 集成 SDK
 
-- 第1步: 在 Agora.io SDK 下载 RTM SDK，解压后将其中的 libs 文件夹下的 *.so 复制到本项目的 ./libs 下，将 include 文件夹下的头文件复制到本项目的 ./include 下。
+在 Agora.io SDK 下载 RTM SDK，解压后将其中的 libs 文件夹下的 *.so 复制到本项目的 ./libs 下，将 include 文件夹下的头文件复制到本项目的 ./include 下。
 
-- 第2步: 执行编译脚本 build.sh 编译程序, 最终会在 build 目录下生成可执行文件 rtm_demo
+### 第4步: 编译运行程序
+
+执行编译脚本 build.sh 编译程序, 最终会在 build 目录下生成可执行文件 rtm_demo
 
 最后设置一下动态库的加载路径 export LD_LIBRARY_PATH=./lib , 然后就可以通过 ./build/rtm_demo 运行程序
 
-## 运行环境
-
-- ubuntu 18.04 or Debian 9.9
-- x86-64
-- C++ 11
 
 ## 联系我们
 

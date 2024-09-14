@@ -11,9 +11,23 @@
 - 发送和接收频道消息
 - 登出 RTM 服务器
 
+## 运行环境
+
+- ubuntu 18.04 or Debian 9.9
+- x86-64
+- Java 8 and above
+
 ## 运行示例程序
 
-首先在 [Agora.io 注册](https://dashboard.agora.io/cn/signup/) 注册账号，并创建自己的测试项目，获取到 AppID。
+### 第1步: 克隆项目工程
+
+```
+git clone git@github.com:AgoraIO/RTM2.git
+```
+
+### 第2步: 创建项目 AppID
+
+在 [Agora.io 注册](https://dashboard.agora.io/cn/signup/) 注册账号，并创建自己的测试项目，获取到 AppID。
 
 将 AppID 填写进 "src/main/java/io/agora/RtmJavaDemo.java"
 
@@ -24,9 +38,9 @@ class APPID {
 
 ```
 
-## 集成方式
+### 第3步: 集成 SDK
 
-- 第1步: 更新pom.xml中的SDK版本
+更新pom.xml中的SDK版本
 
 ```
       <dependency>                                       
@@ -36,7 +50,7 @@ class APPID {
       </dependency>
 ```
 
-- 第2步: 执行以下命令，编译运行程序
+### 第4步: 编译运行程序
 
 ```
 ./clear.sh 
@@ -46,11 +60,6 @@ export LD_LIBRARY_PATH=/tmp/rtm
 java -cp target/RTM-Java-Demo-1.0-SNAPSHOT.jar io.agora.RtmJavaDemo
 ```
 
-## 运行环境
-
-- ubuntu 18.04 or Debian 9.9
-- x86-64
-- Java 8
 
 ## 联系我们
 

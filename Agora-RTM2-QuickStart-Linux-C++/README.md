@@ -1,4 +1,4 @@
-# Agora RTM2 Linux Java Quick Start Demo
+# Agora RTM2 Linux CPP Quick Start Demo
 
 *其他语言版本： [简体中文](README.zh.md)*
 
@@ -15,7 +15,7 @@ With this sample app, you can:
 
 - ubuntu 18.04 or Debian 9.9
 - x86-64
-- Java 8 and above
+- C++ 11 and above
 
 ## Running the App
 
@@ -27,38 +27,22 @@ git clone git@github.com:AgoraIO/RTM2.git
 ### 2. replace appid 
 
 create a developer account at [Agora.io](https://dashboard.agora.io/signin/), and obtain an App ID.
-Update "src/main/java/io/agora/RtmJavaDemo.java" with your App ID .
+Update "rtm_quick_start.cpp" with your App ID .
 
 ```
-class APPID {
-    public static final String APP_ID = "Your App ID";
-}
+const std::string APP_ID = "Your APP ID";
 
 ```
 
 ### 3. integration SDK
 
-update the SDK version in the pom.xml.
-
-```
-      <dependency>                                                         
-        <groupId>io.agora</groupId> 
-        <artifactId>rtm-java</artifactId>                      
-        <version>2.1.12-beta</version>                                                  
-      </dependency>
-```
+download the RTM SDK in Agora.io SDK. After decompressing, copy the *.so under the LIB folder to the ./libs of this project and copy the *.h under the INCLUDE folder to the ./include of this project.
 
 ### 4. build and run
 
-execute the following command to compile and run the program.
+execute the compilation script build.sh to compile the program, which will ultimately generate the executable file rtm_demo in the build directory.
 
-```
-./clear.sh 
-mvn clean
-mvn package
-export LD_LIBRARY_PATH=/tmp/rtm
-java -cp target/RTM-Java-Demo-1.0-SNAPSHOT.jar io.agora.RtmJavaDemo
-```
+Finally, set the dynamic library loading path with export LD_LIBRARY_PATH=./lib, and then you can run the program using ./build/rtm_demo.
 
 
 ## Connect Us

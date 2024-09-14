@@ -47,7 +47,7 @@ public:
   }
 
   void onLinkStateEvent(const LinkStateEvent& event) override {
-    cbPrint("onLinkStateEvent, state: %d -> %d, operation: %d, reason: %s", event.previousState, event.currentState, event.operation, event.reasonDescription);
+    cbPrint("onLinkStateEvent, state: %d -> %d, operation: %d, reason: %s", event.previousState, event.currentState, event.operation, event.reason);
   }
 
   void onPublishResult(const uint64_t requestId, RTM_ERROR_CODE errorCode) override {
