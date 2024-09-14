@@ -31,7 +31,6 @@ Update "rtm_quick_start.cpp" with your App ID .
 
 ```
 const std::string APP_ID = "Your APP ID";
-
 ```
 
 ### 3. integration SDK

@@ -33,7 +33,6 @@ git clone git@github.com:AgoraIO/RTM2.git
 
 ```
 const std::string APP_ID = "Your APP ID";
-
 ```
 
 ### 第3步: 集成 SDK

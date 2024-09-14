@@ -47,7 +47,9 @@ git clone git@github.com:AgoraIO/RTM2.git
 
 * 在本项目的 "app/build.gradle" 文件依赖属性中添加如下依赖关系（此处代码中已添加示例）：
 
+  ```
   compile fileTree(dir: 'libs', include: ['*.jar'])
+  ```
 
 
 使用 Gradle 集成 SDK：

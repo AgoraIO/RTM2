@@ -33,7 +33,6 @@ Update "src/main/java/io/agora/RtmJavaDemo.java" with your App ID .
 class APPID {
     public static final String APP_ID = "Your App ID";
 }
-
 ```
 
 ### 3. integration SDK

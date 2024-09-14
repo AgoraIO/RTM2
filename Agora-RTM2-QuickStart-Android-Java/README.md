@@ -32,7 +32,6 @@ Update "app/src/main/res/values/strings_config.xml" with your App ID .
 
 ```
 <string name="agora_app_id"><#YOUR APP ID#></string>
-
 ```
 
 ### 3. integration SDK
@@ -44,7 +43,9 @@ Use CDN :
 
 * Add the following dependency in the "app/build.gradle" file dependency property of this project (the example is added in this code):
 
+  ```
   compile fileTree(dir: 'libs', include: ['*.jar'])
+  ```
 
 
 Or use `Gradle` to build and run.
