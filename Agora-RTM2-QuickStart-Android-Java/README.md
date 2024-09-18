@@ -83,7 +83,7 @@ Finally, open project with Android Studio, connect your Android device, build an
 
 ## Connect Us
 
-- You can find full API document at [Document Center](https://docs.agora.io/en/)
+- You can find full API document at [Document Center](https://docs.agora.io/en/signaling/overview/product-overview?platform=android)
 - You can file bugs about this demo at [issue](https://github.com/AgoraIO/RTM2/issues)
 
 ## License

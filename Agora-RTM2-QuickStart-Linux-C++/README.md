@@ -46,7 +46,7 @@ Finally, set the dynamic library loading path with export LD_LIBRARY_PATH=./lib,
 
 ## Connect Us
 
-- You can find full API document at [Document Center](https://docs.agora.io/en/)
+- You can find full API document at [Document Center](https://docs.agora.io/en/signaling/overview/product-overview)
 - You can file bugs about this demo at [issue](https://github.com/AgoraIO/RTM2/issues)
 
 ## License

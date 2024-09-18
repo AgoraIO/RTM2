@@ -62,7 +62,7 @@ java -cp target/RTM-Java-Demo-1.0-SNAPSHOT.jar io.agora.RtmJavaDemo
 
 ## Connect Us
 
-- You can find full API document at [Document Center](https://docs.agora.io/en/)
+- You can find full API document at [Document Center](https://docs.agora.io/en/signaling/overview/product-overview)
 - You can file bugs about this demo at [issue](https://github.com/AgoraIO/RTM2/issues)
 
 ## License
