@@ -8,7 +8,7 @@
 #include "IAgoraRtmClient.h"
 
 // Pass in your App ID here
-const std::string APP_ID = "cd1f455efba8496caef1db648f0849b1";
+const std::string APP_ID = "Your APP ID";
 
 // Terminal color codes for UBUNTU/LINUX
 #define RESET   "\033[0m"
