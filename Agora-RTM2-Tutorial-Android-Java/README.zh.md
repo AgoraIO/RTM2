@@ -50,7 +50,10 @@ git clone git@github.com:AgoraIO/RTM2.git
 * 在本项目的 "app/build.gradle" 文件依赖属性中添加如下依赖关系（此处代码中已添加示例）：
 
   ```
-  compile fileTree(dir: 'libs', include: ['*.jar'])
+  dependencies {
+      implementation fileTree(dir: 'libs', include: ['*.jar'])
+      // ...
+  }
   ```
 
 使用 Gradle 集成 SDK：
@@ -79,7 +82,7 @@ git clone git@github.com:AgoraIO/RTM2.git
   ...
   dependencies {
       // ...
-      // 将 x.y.z 替换为具体的 SDK 版本号，如 2.2.1
+      // 将 x.y.z 替换为具体的 SDK 版本号，如 2.2.2
       // 可通过发版说明获取最新版本号
       implementation 'io.agora:agora-rtm:x.y.z'
   }

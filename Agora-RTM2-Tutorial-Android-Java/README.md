@@ -48,7 +48,10 @@ Use CDN :
 * Add the following dependency in the "app/build.gradle" file dependency property of this project (the example is added in this code):
 
   ```
-  compile fileTree(dir: 'libs', include: ['*.jar'])
+  dependencies {
+      implementation fileTree(dir: 'libs', include: ['*.jar'])
+      // ...
+  }
   ```
 
 
@@ -78,7 +81,7 @@ Or use `Gradle` to build and run.
   dependencies {
        // ...
        implementation 'io.agora:agora-rtm:x.y.z'
-   }
+  }
   ```
 
 ### 4. build and run

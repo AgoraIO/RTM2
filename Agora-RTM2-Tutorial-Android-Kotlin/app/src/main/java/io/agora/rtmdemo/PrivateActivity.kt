@@ -64,9 +64,8 @@ class PrivateActivity : Activity() {
     private fun onClickSendPrivateMessageBtn() {
         log(LogLevel.API, "send private message")
         val storeInHistory = binding.storeInHistory.isChecked()
-        val options = PublishOptions(
-            RtmConstants.RtmChannelType.USER, ""
-        )
+        var options = PublishOptions()
+        options.setChannelType(RtmConstants.RtmChannelType.USER)
         val peer = binding.peerName.text.toString()
         val message = binding.privateMessage.text.toString()
         rtmClient?.publish(peer, message, options, object : ResultCallback<Void?> {

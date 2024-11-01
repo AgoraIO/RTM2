@@ -310,8 +310,10 @@ class ChannelActivity : Activity() {
         val channelName = binding.msgChannelName.text.toString()
         val customType = binding.customType.text.toString()
         val storeInHistory = binding.msgStoreInHistory.isChecked()
-        val options =
-            PublishOptions(RtmConstants.RtmChannelType.MESSAGE, customType)
+        var options = PublishOptions()
+        options.setChannelType(RtmConstants.RtmChannelType.MESSAGE)
+        options.setCustomType(customType)
+
         val message = binding.channelMessage.text.toString()
 
         rtmClient?.publish(channelName, message, options, object : ResultCallback<Void?> {

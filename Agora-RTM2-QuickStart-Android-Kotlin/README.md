@@ -43,7 +43,10 @@ Use CDN :
 * Add the following dependency in the "app/build.gradle" file dependency property of this project (the example is added in this code):
 
   ```
-  compile fileTree(dir: 'libs', include: ['*.jar'])
+  dependencies {
+      implementation fileTree(dir: 'libs', include: ['*.jar'])
+      // ...
+  }
   ```
 
 
