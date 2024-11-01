@@ -43,7 +43,7 @@ update the SDK version in the pom.xml.
       <dependency>                                                         
         <groupId>io.agora</groupId> 
         <artifactId>rtm-java</artifactId>                      
-        <version>2.1.12-beta</version>                                                  
+        <version>2.2.2-beta</version>                                                  
       </dependency>
 ```
 
@@ -56,7 +56,7 @@ execute the following command to compile and run the program.
 mvn clean
 mvn package
 export LD_LIBRARY_PATH=/tmp/rtm
-java -cp target/RTM-Java-Demo-1.0-SNAPSHOT.jar io.agora.RtmJavaDemo
+java -jar target/RTM-Java-Demo-1.0-SNAPSHOT.jar
 ```
 
 

@@ -24,7 +24,6 @@ import io.agora.rtm.PresenceEvent;
 import io.agora.rtm.StorageEvent;
 import io.agora.rtm.TopicEvent;
 import io.agora.rtm.PublishOptions;
-import io.agora.rtm.StateItem;
 import io.agora.rtm.UserState;
 import io.agora.rtm.TopicInfo;
 import io.agora.rtm.PublisherInfo;
@@ -173,9 +172,13 @@ public class RtmJavaDemo {
     public void groupChat(String channel) {
         String msg;
         String channelName = channel;
-        SubscribeOptions subscirbeOptions = new SubscribeOptions(true, true, true, true);
+        SubscribeOptions options = new SubscribeOptions();
+        options.setWithMessage(true);
+        options.setWithPresence(true);
+        options.setWithMetadata(true);
+        options.setWithPresence(true);
 
-        mRtmClient.subscribe(channelName, subscirbeOptions, new ResultCallback<Void>() {
+        mRtmClient.subscribe(channelName, options, new ResultCallback<Void>() {
             @Override
             public void onSuccess(Void responseInfo) {
                 System.out.println("join channel success!");
