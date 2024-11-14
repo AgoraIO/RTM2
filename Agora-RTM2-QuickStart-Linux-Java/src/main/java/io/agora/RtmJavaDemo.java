@@ -1,38 +1,24 @@
 package io.agora;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
 import java.util.Scanner;
 
+import io.agora.rtm.ErrorInfo;
 import io.agora.rtm.GetOnlineUsersOptions;
 import io.agora.rtm.GetOnlineUsersResult;
-import io.agora.rtm.RtmClient;
-import io.agora.rtm.RtmConfig;
-import io.agora.rtm.RtmConstants;
-import io.agora.rtm.RtmConstants.RtmMessageQos;
-import io.agora.rtm.RtmConstants.RtmChannelType;
-import io.agora.rtm.RtmEventListener;
-import io.agora.rtm.ErrorInfo;
-import io.agora.rtm.ResultCallback;
-import io.agora.rtm.StreamChannel;
-import io.agora.rtm.SubscribeOptions;
-import io.agora.rtm.JoinChannelOptions;
+import io.agora.rtm.LinkStateEvent;
 import io.agora.rtm.LockEvent;
 import io.agora.rtm.MessageEvent;
 import io.agora.rtm.PresenceEvent;
-import io.agora.rtm.StorageEvent;
-import io.agora.rtm.TopicEvent;
 import io.agora.rtm.PublishOptions;
-import io.agora.rtm.UserState;
-import io.agora.rtm.TopicInfo;
-import io.agora.rtm.PublisherInfo;
-import io.agora.rtm.LockDetail;
-import io.agora.rtm.Metadata;
-import io.agora.rtm.MetadataItem;
-import io.agora.rtm.MetadataOptions;
-import io.agora.rtm.RtmConstants.RtmConnectionChangeReason;
-import io.agora.rtm.RtmConstants.RtmConnectionState;
+import io.agora.rtm.ResultCallback;
+import io.agora.rtm.RtmClient;
+import io.agora.rtm.RtmConfig;
+import io.agora.rtm.RtmConstants;
+import io.agora.rtm.RtmConstants.RtmChannelType;
+import io.agora.rtm.RtmEventListener;
+import io.agora.rtm.StorageEvent;
+import io.agora.rtm.SubscribeOptions;
+import io.agora.rtm.TopicEvent;
 
 class APPID {
     public static final String APP_ID = "Your App ID";
@@ -77,6 +63,11 @@ public class RtmJavaDemo {
         @Override
         public void onTokenPrivilegeWillExpire(String channelName) {
             System.out.println("onTokenPrivilegeWillExpire");
+        }
+
+        @Override
+        public void onLinkStateEvent(LinkStateEvent event) {
+            System.out.println("onLinkStateEvent: " + event.toString());
         }
     };
 
